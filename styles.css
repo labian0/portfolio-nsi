@@ -20,6 +20,7 @@ li:not(:last-child){
     top: 50%;
     transform: translateY(-50%);
     left:16%;
+    font-size: 150%;
 }
 #main_page_aside{
     position: absolute;
