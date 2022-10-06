@@ -7,3 +7,24 @@ a {
     text-decoration: underline;
     color:aquamarine;
 }
+/*MAIN PAGE CSS*/
+#main_page_header{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:16%;
+}
+#main_page_aside{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16%;
+    text-align: right;
+    overflow: hidden;
+}
+#main_page_img_wrapper img{
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 50%;
+}
