@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(46, 46, 46);
+    color: rgb(200, 255, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    text-decoration: underline;
+    color:aquamarine;
+}
