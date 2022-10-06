@@ -7,6 +7,13 @@ a {
     text-decoration: underline;
     color:aquamarine;
 }
+ul{
+    list-style: none;
+    padding-left: 0%;
+}
+li:not(:last-child){
+    padding-bottom: 5px;
+}
 /*MAIN PAGE CSS*/
 #main_page_header{
     position: absolute;
