@@ -2,6 +2,7 @@ body {
     background-color: rgb(46, 46, 46);
     color: rgb(210, 255, 237);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
 }
 a {
     text-decoration: underline;
@@ -37,10 +38,18 @@ li:not(:last-child){
     border-radius: 50%;
 }
 /*PROJETS PAGE CSS*/
+#projets_header{
+    font-size: 110%;
+    text-align: center;
+}
+#projets_grid{
+    text-align: center;
+}
 .carte{
     width: 200px;
     height: 200px;
     overflow: hidden;
+    display: inline-block;
 }
 .carte img{
     height: 100%;
