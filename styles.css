@@ -1,8 +1,11 @@
+/*GLOBAL CSS*/
 body {
     background-color: rgb(46, 46, 46);
     color: rgb(210, 255, 237);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
+    display: block;
+    overflow-y: scroll;
 }
 a {
     text-decoration: underline;
@@ -12,8 +15,20 @@ ul{
     list-style: none;
     padding-left: 0%;
 }
-li:not(:last-child){
-    padding-bottom: 5px;
+.navigation{
+    position: absolute;
+    bottom: 0%;
+    height: 12%;
+    width: 100%;
+    font-size: 150%;
+    text-align: center;
+}
+.navigation ul li{
+    display: inline;
+}
+.self-redirect-a{
+    color: red;
+    text-decoration: none;
 }
 /*MAIN PAGE CSS*/
 #main_page_header{
@@ -37,6 +52,12 @@ li:not(:last-child){
     object-fit: cover;
     border-radius:50%;
 }
+#main_page_header ul li{
+    display: inline;
+}
+#main_page_header ul li:not(:last-child){
+    padding-right: 10px;
+}
 /*PROJETS PAGE CSS*/
 #projets_header{
     font-size: 110%;
@@ -50,6 +71,7 @@ li:not(:last-child){
     height: 200px;
     overflow: hidden;
     display: inline-block;
+    margin: 1%;
 }
 .carte img{
     height: 100%;
@@ -60,7 +82,6 @@ li:not(:last-child){
 }
 .carte img:hover{
     transform: scale(1.2);
-    transition: .2s;
 }
 .carte_sub {
     position: relative;
@@ -75,4 +96,22 @@ li:not(:last-child){
     text-align: center;
     display: table-cell;
     color: white;
+}
+/*ABOUT PAGE CSS*/
+#test_about{
+    height: 100%;
+    width: 100%;
+}
+#about_section{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    left:16%;
+}
+#contact_aside{
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    right: 16%;
 }
