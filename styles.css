@@ -6,6 +6,10 @@ body {
     margin: 0%;
     display: block;
     overflow-y: scroll;
+    font-size: 100%;
+}
+h1{
+    font-size: 2em;
 }
 a {
     text-decoration: underline;
@@ -18,7 +22,7 @@ ul{
 .navigation{
     position: absolute;
     bottom: 0%;
-    height: 12%;
+    height: 10%;
     width: 100%;
     font-size: 150%;
     text-align: center;
@@ -29,6 +33,12 @@ ul{
 .self-redirect-a{
     color: red;
     text-decoration: none;
+}
+.italic{
+    font-style: italic;
+}
+span p{
+    display: inline;
 }
 /*MAIN PAGE CSS*/
 #main_page_header{
@@ -98,20 +108,49 @@ ul{
     color: white;
 }
 /*ABOUT PAGE CSS*/
-#test_about{
-    height: 100%;
-    width: 100%;
-}
 #about_section{
     position: absolute;
     top: 50%;
-    transform: translateY(-70%);
+    transform: translateY(-60%);
     left:16%;
+    width: 34%;
 }
 #contact_aside{
     text-align: right;
     position: absolute;
     top: 50%;
-    transform: translateY(-70%);
+    transform: translateY(-60%);
     right: 16%;
+    width: 34%;
+}
+.progress-bar-container{
+    position: relative;
+    width: 100%;
+    height: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: whitesmoke;
+}
+.progress-bar{
+    height: 100%;
+}
+.twenty-five-pcent{
+    width: 25%;
+    background-color: red;
+}
+.thirty-five-pcent{
+    width: 35%;
+    background-color: orangered;
+}
+.fifty-pcent{
+    width: 50%;
+    background-color: orange;
+}
+.seventy-five-pcent{
+    width: 75%;
+    background-color: yellowgreen;
+}
+.ninety-pcent{
+    width: 90%;
+    background-color: green;
 }
