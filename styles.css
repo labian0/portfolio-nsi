@@ -1,4 +1,7 @@
 /*GLOBAL CSS*/
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: rgb(46, 46, 46);
     color: rgb(210, 255, 237);
@@ -6,6 +9,7 @@ body {
     margin: 0%;
     display: block;
     font-size: 100%;
+    width: 300%;
 }
 h1{
     font-size: 2em;
@@ -22,11 +26,10 @@ ul{
     padding-left: 0%;
 }
 .navigation{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 120%;
-    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .navigation ul li{
     display: inline;
@@ -42,8 +45,8 @@ span p{
     display: inline;
 }
 .carte-navigation{
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     overflow: hidden;
     display: inline-block;
 }
@@ -55,8 +58,11 @@ span p{
 }
 /*MAIN PAGE CSS*/
 #main_page_body{
+    position: absolute;
     width: 100vw;
     height: 100vh;
+    display: inline-block;
+    left: 0%;
 }
 #main_page_header{
     position: absolute;
@@ -91,10 +97,13 @@ span p{
 }
 /*PROJETS PAGE CSS*/
 #projets_body{
-    position: relative;
+    position: absolute;
     height: 100vh;
     width: 100vw;
+    left: 100%;
     overflow: auto;
+    display: inline-block;
+
 }
 .projets_header{
     font-size: 110%;
@@ -136,9 +145,11 @@ span p{
 }
 /*ABOUT PAGE CSS*/
 #about_body{
-    position: relative;
+    position: absolute;
     height: 100vh;
     width: 100vw;
+    display: inline-block;
+    left: 200%;
 
 }
 #about_section{
