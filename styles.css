@@ -160,28 +160,28 @@ span p{
     height: 16px;
     padding-top: 2px;
     padding-bottom: 2px;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.125);
 }
 .progress-bar{
     height: 100%;
 }
 .twenty-five-pcent{
     width: 25%;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
 }
 .thirty-five-pcent{
     width: 35%;
-    background-color: orangered;
+    background-color: rgba(255, 68, 0, 0.5);
 }
 .fifty-pcent{
     width: 50%;
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.5);
 }
 .seventy-five-pcent{
     width: 75%;
-    background-color: yellowgreen;
+    background-color: rgba(153, 205, 50, 0.5);
 }
 .ninety-pcent{
     width: 90%;
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.5);
 }
