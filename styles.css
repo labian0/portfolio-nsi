@@ -64,7 +64,7 @@ span p{
     background-image: url("./img/question-mark.png");
 }
 /*MAIN PAGE CSS*/
-#main_page_body{
+#accueil{
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -103,7 +103,7 @@ span p{
     padding-right: 10px;
 }
 /*PROJETS PAGE CSS*/
-#projets_body{
+#projets{
     position: absolute;
     height: 92vh;
     width: 100vw;
@@ -151,7 +151,7 @@ span p{
     color: white;
 }
 /*ABOUT PAGE CSS*/
-#about_body{
+#about{
     position: absolute;
     height: 92vh;
     width: 100vw;
