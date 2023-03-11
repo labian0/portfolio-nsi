@@ -51,12 +51,17 @@ span p{
     width: 50px;
     overflow: hidden;
     display: inline-block;
+    background-position: center;
+    background-size: cover;
 }
-.carte-navigation img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+#btn-accueil{
+    background-image: url("./img/house.png");
+}
+#btn-projets{
+    background-image: url("./img/gear.png");
+}
+#btn-about{
+    background-image: url("./img/question-mark.png");
 }
 /*MAIN PAGE CSS*/
 #main_page_body{
