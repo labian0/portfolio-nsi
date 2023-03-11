@@ -152,20 +152,28 @@ const pages = ["#main_page_body", "#projets_body", "#about_body"];
 var page = 0;
 window.location.href = pages[page];
 
+function movePage(right){ //right should be a boolean but apparently defining parameter types is only in typescript :/
+    coeff = Number(1*right -1*!right);
+    if (page + coeff in [0,1,2]){
+        page = page + coeff
+        window.location.href = pages[page]
+    }
+};
+
 scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
-    if(evt.deltaY < 0 && page > 0){
-        page -= 1;
-        window.location.href = pages[page];
-    }
-    else if(evt.deltaY > 0 && page < 2){
-        page += 1;
-        window.location.href = pages[page];
-    }
-    else {
-        window.location.href = pages[page];
-    }
+    movePage((evt.deltaY>0));
 });
+
+scrollContainer.addEventListener("keydown", function(evt)
+{
+    if (evt.keyCode == '39'){
+        movePage(true)
+    }
+    else if(evt.keyCode == '37'){
+        movePage(false)
+    }
+})
 
 </script>
 </html>

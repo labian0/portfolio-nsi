@@ -10,6 +10,7 @@ body {
     display: block;
     font-size: 100%;
     width: 300%;
+    overflow-x: hidden;
 }
 h1{
     font-size: 2em;
