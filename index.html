@@ -7,6 +7,7 @@
     <title>Antoine</title>
 </head>
 <body>
+    <main>
     <!--
 
         MAIN PAGE
@@ -143,6 +144,25 @@
             </li>
         </ul>
     </div>
+    </main>
 </body>
+<script type="text/javascript">
+const scrollContainer = document.querySelector("html");
+const pages = ["#main_page_body", "#projets_body", "#about_body"];
+var page = 0;
+window.location.href = pages[page];
 
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    if(evt.deltaY < 0 && page > 0){
+        page -= 1;
+        window.location.href = pages[page];
+    }
+    else if(evt.deltaY > 0 && page < 2){
+        page += 1;
+        window.location.href = pages[page];
+    }
+});
+
+</script>
 </html>

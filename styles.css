@@ -28,6 +28,7 @@ ul{
 .navigation{
     position: fixed;
     top: 0;
+    height: 8%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -98,12 +99,12 @@ span p{
 /*PROJETS PAGE CSS*/
 #projets_body{
     position: absolute;
-    height: 100vh;
+    height: 92vh;
     width: 100vw;
     left: 100%;
     overflow: auto;
     display: inline-block;
-
+    bottom: 0;
 }
 .projets_header{
     font-size: 110%;
@@ -146,11 +147,11 @@ span p{
 /*ABOUT PAGE CSS*/
 #about_body{
     position: absolute;
-    height: 100vh;
+    height: 92vh;
     width: 100vw;
     display: inline-block;
     left: 200%;
-
+    bottom: 0;
 }
 #about_section{
     text-align: center;
