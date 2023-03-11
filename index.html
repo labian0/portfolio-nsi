@@ -131,16 +131,21 @@
             </ul>
         </section>
     </div>
+    <!--
+
+        NAVIGATION
+
+    -->
     <div class="navigation">
         <ul>
             <li>
-                <a href="#main_page_body" class="carte-navigation"><img src="img/house.png"></a>                  
+                <a class="carte-navigation" onclick="setPage(0)"><img src="img/house.png"></a>                  
             </li>
             <li>
-                <a href="#projets_body" class="carte-navigation"><img src="img/gear.png"></a>
+                <a class="carte-navigation" onclick="setPage(1)"><img src="img/gear.png"></a>
             </li>
             <li>
-                <a href="#about_body" class="carte-navigation"><img src="img/question-mark.png"></a>
+                <a class="carte-navigation" onclick="setPage(2)"><img src="img/question-mark.png"></a>
             </li>
         </ul>
     </div>
@@ -152,11 +157,15 @@ const pages = ["#main_page_body", "#projets_body", "#about_body"];
 var page = 0;
 window.location.href = pages[page];
 
+function setPage(num){
+    page = num;
+    window.location.href = pages[page];
+}
+
 function movePage(right){ //right should be a boolean but apparently defining parameter types is only in typescript :/
     coeff = Number(1*right -1*!right);
     if (page + coeff in [0,1,2]){
-        page = page + coeff
-        window.location.href = pages[page]
+        setPage(page+coeff)
     }
 };
 
