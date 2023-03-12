@@ -27,6 +27,7 @@ ul{
     padding-left: 0%;
 }
 .navigation{
+    z-index: 4;
     position: fixed;
     top: 0;
     height: 8%;
@@ -65,6 +66,7 @@ span p{
 }
 /*MAIN PAGE CSS*/
 #accueil{
+    z-index: 2;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -104,6 +106,7 @@ span p{
 }
 /*PROJETS PAGE CSS*/
 #projets{
+    z-index: 4;
     position: absolute;
     height: 92vh;
     width: 100vw;
@@ -152,6 +155,7 @@ span p{
 }
 /*ABOUT PAGE CSS*/
 #about{
+    z-index: 4;
     position: absolute;
     height: 92vh;
     width: 100vw;
@@ -202,4 +206,29 @@ span p{
 .ninety-pcent{
     width: 90%;
     background-color: rgba(0, 128, 0, 0.5);
+}
+#background{
+    overflow-y: hidden;
+}
+#background div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1000vw;
+    background-size: contain;
+    background-repeat: repeat-x;
+    transition: 1000ms;
+}
+#bg{
+    z-index: 0;
+    background-image: url("./img/bg.png");
+}
+#fg1{
+    z-index: 1;
+    background-image: url("./img/fg1.png");
+}
+#fg2{
+    z-index: 3;
+    background-image: url("./img/fg2.png");
 }

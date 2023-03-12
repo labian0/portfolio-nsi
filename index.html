@@ -149,6 +149,11 @@
             </li>
         </ul>
     </div>
+    <section id="background">
+        <div id="bg"></div>
+        <div id="fg1"></div>
+        <div id="fg2"></div>
+    </section>
     </main>
 </body>
 <script type="text/javascript">
@@ -156,16 +161,26 @@ const scrollContainer = document.querySelector("html");
 const pages = ["#accueil", "#projets", "#about"];
 var page = 0;
 window.location.href = pages[page];
+let bg = document.getElementById("bg");
+let fg1 = document.getElementById("fg1");
+let fg2 = document.getElementById("fg2");
+function updateBackground(){
+    bg.style.left = 100*-page + "px";
+    fg1.style.left = 400*-page + "px";
+    fg2.style.left = 1600*-page + "px";
+}
 
 function setPage(num){
     page = num;
     window.location.href = pages[page];
+    updateBackground();
 }
 
 function movePage(right){ //right should be a boolean but apparently defining parameter types is only in typescript :/
     coeff = Number(1*right -1*!right);
     if (page + coeff in [0,1,2]){
         setPage(page+coeff)
+        updateBackground();
     }
 };
 
@@ -177,10 +192,10 @@ scrollContainer.addEventListener("wheel", (evt) => {
 scrollContainer.addEventListener("keydown", function(evt)
 {
     if (evt.keyCode == '39'){
-        movePage(true)
+        movePage(true);
     }
     else if(evt.keyCode == '37'){
-        movePage(false)
+        movePage(false);
     }
 })
 
