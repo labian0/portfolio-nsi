@@ -185,7 +185,7 @@ function movePage(right){ //right should be a boolean but apparently defining pa
 scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     movePage((evt.deltaY>0));
-});
+}, {passive:false});
 
 scrollContainer.addEventListener("keydown", function(evt)
 {
