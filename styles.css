@@ -115,7 +115,7 @@ span p{
     height: 92%;
     width: 100%;
     left: 100%;
-    overflow: auto;
+    overflow-y: auto;
     display: inline-block;
     bottom: 0;
 }
@@ -166,7 +166,7 @@ span p{
     display: inline-block;
     left: 200%;
 	bottom: 0;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 #about_section{
     text-align: center;
