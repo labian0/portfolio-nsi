@@ -73,6 +73,7 @@ span p{
     height: 100%;
     display: inline-block;
     left: 0%;
+    outline: none;
 }
 #main_page_header{
     position: absolute;
@@ -118,6 +119,7 @@ span p{
     overflow-y: auto;
     display: inline-block;
     bottom: 0;
+    outline: none;
 }
 .projets_header{
     font-size: 110%;
@@ -167,6 +169,7 @@ span p{
     left: 200%;
 	bottom: 0;
 	overflow-y: auto;
+    outline: none;
 }
 #about_section{
     text-align: center;
