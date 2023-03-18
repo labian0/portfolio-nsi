@@ -160,9 +160,9 @@ const scrollContainer = document.querySelector("html");
 const pages = ["#accueil", "#projets", "#about"];
 var page = 0;
 window.location.href = pages[page];
-let bg = document.getElementById("bg");
-let fg1 = document.getElementById("fg1");
-let fg2 = document.getElementById("fg2");
+let bg = document.getElementById("fg1");
+let fg1 = document.getElementById("fg2");
+let fg2 = document.getElementById("fg3");
 function updateBackground(){
     bg.style.left = 100*-page + "px";
     fg1.style.left = 400*-page + "px";
