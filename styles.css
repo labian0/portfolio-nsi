@@ -1,6 +1,7 @@
 /*GLOBAL CSS*/
 html{
     scroll-behavior: smooth;
+	height:100%;
 }
 body {
     background-color: rgb(46, 46, 46);
@@ -9,8 +10,8 @@ body {
     margin: 0%;
     display: block;
     font-size: 100%;
-    width: 300%;
     overflow-x: hidden;
+	height:100%;
 }
 h1{
     font-size: 2em;
@@ -68,8 +69,8 @@ span p{
 #accueil{
     z-index: 2;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: inline-block;
     left: 0%;
 }
@@ -84,6 +85,8 @@ span p{
 }
 #main_page_aside{
     position: absolute;
+	height: 25vw;
+	width: 25vw;
     top: 50%;
     right: 12%;
     transform: translateY(-50%);
@@ -91,9 +94,10 @@ span p{
     overflow: hidden;
     display: inline-block;
 }
-#main_page_img_wrapper img{
-    height: 350px;
-    width: 350px;
+#main_page_aside img{
+	position: relative;
+    height: 100%;
+    width: 100%;
     object-position: center;
     object-fit: cover;
     border-radius:50%;
@@ -108,8 +112,8 @@ span p{
 #projets{
     z-index: 4;
     position: absolute;
-    height: 92vh;
-    width: 100vw;
+    height: 92%;
+    width: 100%;
     left: 100%;
     overflow: auto;
     display: inline-block;
@@ -157,19 +161,15 @@ span p{
 #about{
     z-index: 4;
     position: absolute;
-    height: 92vh;
-    width: 100vw;
+    height: 92%;
+    width: 100%;
     display: inline-block;
     left: 200%;
-    bottom: 0;
+	bottom: 0;
+	overflow-y: scroll;
 }
 #about_section{
     text-align: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
 }
 .margin-p{
     margin-right: 10%;
@@ -215,7 +215,7 @@ span p{
     top: 0;
     left: 0;
     height: 100%;
-    width: 1000vw;
+    width: 1000%;
     background-size: contain;
     background-repeat: repeat-x;
     transition: 1000ms;
