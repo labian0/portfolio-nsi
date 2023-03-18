@@ -28,7 +28,7 @@ ul{
     padding-left: 0%;
 }
 .navigation{
-    z-index: 4;
+    z-index: 5;
     position: fixed;
     top: 0;
     height: 8%;
